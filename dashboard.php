@@ -17,5 +17,7 @@ if(!isset($_SESSION['usuario'])){
 </head>
 <body>
     <h1>dashboard</h1>
+
+    <a href="logout.php">Sair</a>
 </body>
 </html>
