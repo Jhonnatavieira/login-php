@@ -18,7 +18,17 @@ $usuarios = [
      new User(user: "admin3", senha: "91011"),
      new User(user: "admin4", senha: "12131"),
      new User(user: "admin5", senha: "15161")];
- 
+
+
+ /**
+ * Valida um usuário com base em nome de usuário e senha.
+ *
+ * @param string $user     Nome de usuário fornecido para validação.
+ * @param string $senha    Senha fornecida para validação.
+ * @param array  $usuarios Lista de objetos do tipo User contendo os dados dos usuários cadastrados.
+ *
+ * @return ?User Retorna o objeto User correspondente se as credenciais forem válidas, ou null se não houver correspondência.
+ */
 function validarUsuario(string $user, string $senha, array $usuarios): ?User{
     foreach ($usuarios as $usuario) {
         if($usuario-> user === $user && $usuario-> senha === $senha){
