@@ -40,6 +40,19 @@
                 </div>
             </div>
         </div>
+        <div class="row justify-content-center mt-2">
+            <div class="col-md-6">
+                <div class="text-center">
+                    <?php 
+                    session_start();
+                    if (isset($_SESSION['login_error'])) {
+                        echo "<div class='alert alert-danger'>" . $_SESSION['login_error'] . "</div>";
+                        unset($_SESSION['login_error']);
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
     </div>
  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>

@@ -49,7 +49,9 @@ if($_POST){
         header("Location: dashboard.php");
         exit;
     }else{
-        $error = "Usuario ou senha inválidos";
+        $_SESSION['login_error'] = "Usuário ou senha inválidos";
+        header("Location: index.php");
+        exit;
     }
 }
 ?>
