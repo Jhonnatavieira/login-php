@@ -16,8 +16,8 @@ $usuarios = [
      new User(user: "admin1", senha: "1234"),
      new User(user: "admin2", senha: "5678"),
      new User(user: "admin3", senha: "91011"),
-     new User(user: "admin4", senha: "12131"),
-     new User(user: "admin5", senha: "15161")];
+     new User(user: "admin4", senha: "121314"),
+     new User(user: "admin5", senha: "151617")];
 
 
  /**
