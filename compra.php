@@ -33,7 +33,7 @@ if (!isset($_SESSION['usuario'])) {
 
                         <!-- links da sidebar -->
                         <ul class="nav nav-pills flex-column mb-auto">
-                            <li class="nav-item"> <a href="dashboard.php" class="nav-link active" aria-current="page"> <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
+                            <li class="nav-item"> <a href="dashboard.php" class="nav-link text-white" aria-current="page"> <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
                                         <use xlink:href="#home"></use>
                                     </svg>
                                     Dashboard
@@ -43,7 +43,7 @@ if (!isset($_SESSION['usuario'])) {
                                     </svg>
                                     Formulario
                                 </a> </li>
-                            <li> <a href="compra.php" class="nav-link text-white"> <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
+                            <li> <a href="compra.php" class="nav-link text-white  active"> <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
                                         <use xlink:href="#table"></use>
                                     </svg>
                                     Compra de Produto

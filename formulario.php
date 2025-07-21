@@ -33,12 +33,12 @@ if (!isset($_SESSION['usuario'])) {
 
                         <!-- links da sidebar -->
                         <ul class="nav nav-pills flex-column mb-auto">
-                            <li class="nav-item"> <a href="dashboard.php" class="nav-link active" aria-current="page"> <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
+                            <li class="nav-item"> <a href="dashboard.php" class="nav-link text-white" aria-current="page"> <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
                                         <use xlink:href="#home"></use>
                                     </svg>
                                     Dashboard
                                 </a> </li>
-                            <li> <a href="formulario.php" class="nav-link text-white"> <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
+                            <li> <a href="formulario.php" class="nav-link text-white active"> <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
                                         <use xlink:href="#speedometer2"></use>
                                     </svg>
                                     Formulario
@@ -71,7 +71,45 @@ if (!isset($_SESSION['usuario'])) {
                         <div class="container">
                             <div class="row">
                                 <div class="col">
-                                    <h1>dashboard</h1>
+                                    <div class="container">
+                                        <div class="row justify-content-center mt-5">
+                                            <div class="col-md-6">
+                                                <div class="card">
+                                                    <div class="card-header text-white" style="background-color:rgba(0, 37, 138, 1);">
+                                                        <!--  -->
+                                                        <h4 class="mb-0 text-center">Cadastrar</h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <form action="" method="post">
+                                                            <div class="mb-3">
+                                                                <label for="email" class="form-label">Usuario</label>
+                                                                <input type="text" class="form-control" id="email" name="txtUser" placeholder="Coloque seu email aqui...">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="password" class="form-label">Senha</label>
+                                                                <input type="password" class="form-control" id="password" name="txtSenha" placeholder="Senha...">
+                                                            </div>
+                                                            <div class="mb-3 form-check">
+                                                                <input type="checkbox" class="form-check-input" id="rememberMe">
+                                                                <label class="form-check-label" for="rememberMe">Remember me</label>
+                                                            </div>
+                                                            <button formaction="login.php" class="btn" style="background-color:rgba(0, 37, 138, 1); color: white;">Login</button>
+
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center mt-2">
+                                            <div class="col-md-6">
+                                                <div class="text-center">
+                                                    <?php
+                                                    
+                                                    ?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
