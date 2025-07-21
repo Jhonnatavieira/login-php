@@ -12,7 +12,7 @@
  
 <body>
     <div class="container">
-        <div class="row justify-content-center mt-5">
+        <div class="row justify-content-center align-items-center mt-5">
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header text-white" style="background-color:rgba(0, 37, 138, 1);">

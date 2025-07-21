@@ -65,47 +65,63 @@ if (!isset($_SESSION['usuario'])) {
                         </div>
                     </div>
                 </div>
-                <div class="col py-3">
+
+                <!-- interface -->
+                <div class="col p-0">
 
                     <main>
-                        <div class="container">
+                        <div class="container-fluid bg-secondary p-2">
                             <div class="row">
                                 <div class="col">
-                                    <div class="container">
-                                        <div class="row justify-content-center mt-5">
-                                            <div class="col-md-6">
-                                                <div class="card">
-                                                    <div class="card-header text-white" style="background-color:rgba(0, 37, 138, 1);">
-                                                        <!--  -->
-                                                        <h4 class="mb-0 text-center">Cadastrar</h4>
-                                                    </div>
-                                                    <div class="card-body">
-                                                        <form action="" method="post">
-                                                            <div class="mb-3">
-                                                                <label for="email" class="form-label">Usuario</label>
-                                                                <input type="text" class="form-control" id="email" name="txtUser" placeholder="Coloque seu email aqui...">
-                                                            </div>
-                                                            <div class="mb-3">
-                                                                <label for="password" class="form-label">Senha</label>
-                                                                <input type="password" class="form-control" id="password" name="txtSenha" placeholder="Senha...">
-                                                            </div>
-                                                            <div class="mb-3 form-check">
-                                                                <input type="checkbox" class="form-check-input" id="rememberMe">
-                                                                <label class="form-check-label" for="rememberMe">Remember me</label>
-                                                            </div>
-                                                            <button formaction="login.php" class="btn" style="background-color:rgba(0, 37, 138, 1); color: white;">Login</button>
+                                    <h1 class="text-center text-white">Cadastro de Clientes</h1>
+                                </div>
+                            </div>
+                        </div>
 
-                                                        </form>
-                                                    </div>
+                        <div class="container mt-3">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card w-100">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                        Cadastrar cliente
+                                                    </button>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="row justify-content-center mt-2">
-                                            <div class="col-md-6">
-                                                <div class="text-center">
-                                                    <?php
-                                                    
-                                                    ?>
+                                            <div class="row mt-3">
+                                                <div class="col">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">Nome</th>
+                                                                <th scope="col">Contato</th>
+                                                                <th scope="col">Email</th>
+                                                                <th scope="col">Idade</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">1</th>
+                                                                <td>Mark</td>
+                                                                <td>Otto</td>
+                                                                <td>@mdo</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">2</th>
+                                                                <td>Jacob</td>
+                                                                <td>Thornton</td>
+                                                                <td>@fat</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">3</th>
+                                                                <td>John</td>
+                                                                <td>Doe</td>
+                                                                <td>@social</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                             </div>
                                         </div>
@@ -113,6 +129,8 @@ if (!isset($_SESSION['usuario'])) {
                                 </div>
                             </div>
                         </div>
+
+
                     </main>
 
 
@@ -123,10 +141,37 @@ if (!isset($_SESSION['usuario'])) {
 
 
 
-
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-center w-100" id="exampleModalLabel">Novo cliente</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="nome" name="txtNome" placeholder="Nome do cliente">
+                                <input type="text" class="form-control mt-4" id="celular" name="txtCelular" placeholder="Celular do cliente">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="email" name="txtEmail" placeholder="Email do cliente">
+                                <input type="number" class="form-control mt-4" id="idade" name="txtIdade" placeholder="Idade do cliente">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button formaction="formulario.php" class="btn bg-primary" style=" color: white;">Salvar cliente</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-
 </body>
 
 </html>
