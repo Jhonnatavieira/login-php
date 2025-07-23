@@ -91,29 +91,24 @@ if (!isset($_SESSION['usuario'])) {
 
     <!-- Modal 2 -->
     <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-md">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5 text-center w-100" id="exampleModalLabel">Cliente</h1>
+                    <h1 class="modal-title fs-5 text-center w-100" id="exampleModalLabel">cliente</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6">
-                                <label for="ID">ID</label><br>
-                                <span>1</span>
-                                <hr>
-                                <br>
-                                <label for="ID">Nome do cliente: </label><br>
-                                <span>Otto</span>
-                                <hr>
+                                <label for="ID">ID</label>
+                                <input type="text" class="form-control" id="ID" name="txtID" placeholder="1">
+                                <label for="Nome">Nome</label>
+                                <input type="text" class="form-control" id="Nome" name="txtNome" placeholder="Otto">
                             </div>
                             <div class="col-md-6">
-                                <label for="">CPF</label><br>
-                                <span>123.123.123-12</span>
-                                <hr>
-                                <br>
+                                <label for="CPF">CPF</label>
+                                <input type="text" class="form-control" id="CPF" name="txtCPF" placeholder="123.123.123-12">
                             </div>
                         </div>
                     </div>
