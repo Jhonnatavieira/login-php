@@ -39,11 +39,13 @@ if (!isset($_SESSION['usuario'])) {
                             <div class="row">
                                 <div class="col">
                                     <?php
-                                    if ($_GET['tela'] == 'dashboard') {
+                                    $tela = isset($_GET['tela']) ? $_GET['tela'] : 'dashboard';
+
+                                    if ($tela == 'dashboard') {
                                         include_once 'dashboardContent.php';
-                                    } elseif ($_GET['tela'] == 'formulario') {
+                                    } elseif ($tela == 'formulario') {
                                         include_once 'formulario.php';
-                                    } elseif ($_GET['tela'] == 'compra') {
+                                    } elseif ($tela == 'compra') {
                                         include_once 'compra.php';
                                     }
                                     ?>
